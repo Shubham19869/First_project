@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Areas - Robotics Website</title>
+  <style>
+    /* General Styles */
+  /* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: url('background_img.gif') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+header {
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 15px 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+header img {
+      width: 50px; /* Adjust logo size */
+      height: auto;
+      margin-right: 10px; /* Space between logo and text */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+/* Research Areas Section */
+.research-areas {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.research-areas h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #00d9ff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.research-areas p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+/* Research Areas List */
+.research-areas ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.research-areas ul li {
+  background-color: rgba(15, 32, 39, 0.9);
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s ease;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.research-areas ul li:hover {
+  background-color: #227f95;
+  transform: translateY(-5px);
+  color: #fff;
+}
+
+.research-areas ul li strong {
+  font-weight: bold;
+  color: #00d9ff;
+}
+
+/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  background-color: #007BFF;
+  padding: 12px 30px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.back-home:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+  .research-areas h2 {
+    font-size: 1.8rem;
+  }
+
+  .research-areas p {
+    font-size: 1rem;
+  }
+
+  .research-areas ul li {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .back-home {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <!-- Logo Image -->
+    <img src="logo.png" alt="Robotics Research Centre Logo"> <!-- Replace with your actual logo file path -->
+    <h1>Robotics Research Centre</h1>
+  </header>
+
+  <!-- Research Areas Section -->
+  <section class="research-areas">
+    <h2>Research Areas</h2>
+    <ul>
+      <li><strong>Artificial Intelligence and Machine Learning in Robotics</strong>: Enhancing the capabilities of robots through intelligent decision-making and autonomous learning.</li>
+      <li><strong>Autonomous Vehicles and Drones</strong>: Developing robots that can operate autonomously in complex environments, including self-driving cars and drone delivery systems.</li>
+      <li><strong>Human-Robot Interaction</strong>: Improving the ways in which humans and robots collaborate, focusing on usability, safety, and communication.</li>
+      <li><strong>Industrial and Service Robotics</strong>: Creating robots for manufacturing, assembly, and logistics to improve efficiency, precision, and safety in industrial settings.</li>
+      <li><strong>Robotics for Healthcare</strong>: Designing robots that assist in surgeries, rehabilitation, and patient care, improving healthcare delivery and outcomes.</li>
+      <li><strong>Robotic Process Automation (RPA)</strong>: Using robots for automating repetitive tasks in business and administrative processes to increase productivity and reduce errors.</li>
+      <li><strong>Soft Robotics</strong>: Developing robots made of flexible materials to safely interact with delicate objects and work in environments that are not suitable for traditional rigid robots.</li>
+    </ul>
+    <a href="main.html" class="back-home">Back to Home</a>
+  </section>
+
+</body>
+</html>

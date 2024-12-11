@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Robotics Website</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: url('background_img.gif') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      padding: 0 20px;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 40px;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 30px auto;
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+    }
+
+    .contact-section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      font-weight: 700;
+      color: #00d9ff;
+    }
+
+    .contact-section p {
+      font-size: 1.3rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      color: #ddd;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .contact-form:hover {
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1.1rem;
+      transition: border 0.3s;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border: 1px solid #00d9ff;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 160px;
+    }
+
+    .contact-form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    /* Contact Information */
+    .contact-info {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .contact-info a {
+      color: #00d9ff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Back to Home Button */
+    .back-home {
+      display: inline-block;
+      background-color: #007BFF;
+      padding: 12px 25px;
+      color: white;
+      text-decoration: none;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .back-home:hover {
+      background-color: #0056b3;
+    }
+
+    /* Media Query for Responsiveness */
+    @media screen and (max-width: 768px) {
+      .contact-section h2 {
+        font-size: 2.2rem;
+      }
+
+      .contact-section p {
+        font-size: 1rem;
+      }
+
+      .contact-form button {
+        font-size: 1rem;
+        padding: 12px 25px;
+      }
+
+      .back-home {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Robotics Research Centre</h1>
+  </header>
+
+  <!-- Contact Us Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to get in touch with us, feel free to reach out using the contact form below or through the provided contact details.</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="/submit_contact_form" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Alternatively, you can reach us through:</p>
+      <ul>
+        <li>Email: <a href="mailto:robotics@researchcentre.com">robotics@researchcentre.com</a></li>
+        <li>Phone: <a href="tel:+1234567890">+123-456-7890</a></li>
+        <li>Follow us on Social Media:
+          <a href="#">LinkedIn</a>, 
+          <a href="#">Twitter</a>, 
+          <a href="#">Facebook</a>
+        </li>
+      </ul>
+    </div>
+
+    <a href="main.html" class="back-home">Back to Home</a>
+  </section>
+
+</body>
+</html>

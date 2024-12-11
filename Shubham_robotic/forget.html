@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password - Robotics Research Centre</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    /* Forgot Password Container */
+    .forgot-password-container {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .forgot-password-container h1 {
+      font-size: 1.8rem;
+      color: #00d9ff;
+      margin-bottom: 20px;
+    }
+
+    .forgot-password-container input {
+      width: 100%;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #2a2a2a;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .forgot-password-container input::placeholder {
+      color: #aaa;
+    }
+
+    .forgot-password-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      background-color: #00d9ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .forgot-password-container button:hover {
+      background-color: #00a3cc;
+    }
+
+    .forgot-password-container a {
+      color: #00d9ff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    .forgot-password-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="forgot-password-container">
+    <h1>Forgot Password</h1>
+    <form id="forgotPasswordForm">
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <button type="submit">Send Reset Link</button>
+    </form>
+    <a href="login.html">Back to Login</a>
+  </div>
+
+  <script>
+    document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      const email = document.getElementById('email').value;
+      if (email) {
+        // Simulate sending reset link
+        alert(`A password reset link has been sent to ${email}`);
+        // Redirect to login page or handle other logic
+        window.location.href = 'login.html';
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  </script>
+</body>
+</html>

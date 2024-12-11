@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - Robotics Website</title>
+  <style>
+    /* Add the CSS here (from the updated version above) */
+    /* General Styles */
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: url('background_img.gif') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Achievements Section */
+.achievements {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.achievements h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #00d9ff;
+  font-weight: 700;
+}
+
+.achievements p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/* Table Styles for Achievements */
+.achievements-table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.achievements-table th,
+.achievements-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #444;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  background-color: rgba(15, 32, 39, 0.95);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.achievements-table th {
+  background-color: #1a313b;
+  color: #00d9ff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.achievements-table tr:nth-child(even) {
+  background-color: #1c3d4a;
+}
+
+.achievements-table tr:hover {
+  background-color: #227f95;
+  color: #fff;
+  cursor: pointer;
+}
+
+.achievements-table td {
+  color: #d9d9d9;
+}
+
+.achievements-table td:hover {
+  background-color: #227f95;
+  color: #fff;
+}
+
+/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  background-color: #007BFF;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.back-home:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+  .achievements h2 {
+    font-size: 1.8rem;
+  }
+
+  .achievements p {
+    font-size: 1rem;
+  }
+
+  .achievements-table th, .achievements-table td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .back-home {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Robotics Research Centre</h1>
+  </header>
+
+  <!-- Achievements Section -->
+  <section class="achievements">
+    <h2>Our Achievements</h2>
+
+    <!-- Table for Achievements -->
+    <table class="achievements-table">
+      <thead>
+        <tr>
+          <th>Achievement</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AI-driven Humanoid Robot</td>
+          <td>Developed the first AI-driven humanoid robot in the region, capable of performing complex human interactions.</td>
+        </tr>
+        <tr>
+          <td>Research Papers</td>
+          <td>Published over 50 research papers in top-tier international robotics and AI journals, contributing to cutting-edge knowledge in the field.</td>
+        </tr>
+        <tr>
+          <td>Global Collaborations</td>
+          <td>Collaborated with global tech companies to create advanced robotic solutions for industries such as manufacturing, healthcare, and logistics.</td>
+        </tr>
+        <tr>
+          <td>Autonomous Drone</td>
+          <td>Created an autonomous drone system that can deliver medical supplies to remote areas, revolutionizing emergency healthcare delivery.</td>
+        </tr>
+        <tr>
+          <td>Awards in Robotics</td>
+          <td>Won multiple awards at international robotics competitions, showcasing our excellence in robot design and functionality.</td>
+        </tr>
+        <tr>
+          <td>Precision Surgery Robotic Arm</td>
+          <td>Developed a robotic arm for precision surgery, which has been successfully used in several medical institutions to assist with complex procedures.</td>
+        </tr>
+        <tr>
+          <td>Internship Program</td>
+          <td>Launched an internship program that allows aspiring roboticists and engineers to work alongside experts in the field, promoting hands-on learning.</td>
+        </tr>
+        <tr>
+          <td>Smart City Robots</td>
+          <td>Successfully deployed robots in several smart cities, assisting with tasks such as maintenance, delivery, and surveillance.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Our commitment to innovation and excellence continues to drive us forward, and we look forward to achieving even greater milestones in the future.
+    </p>
+
+    <a href="main.html" class="back-home">Back to Home</a>
+  </section>
+
+</body>
+</html>

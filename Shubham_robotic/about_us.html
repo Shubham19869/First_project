@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Robotics Website</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #fff;
+      background: url('background_img.gif') no-repeat center center fixed;
+      background-size: cover;
+      padding: 0 20px;
+      overflow-x: hidden;
+    }
+
+header {
+  background: rgba(15, 32, 39, 0.9);
+  color: #00d9ff;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+    /* About Us Section */
+    .about-us {
+  background-color: rgba(15, 32, 39, 0.95);
+  padding: 50px 30px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #00d9ff;
+  text-transform: uppercase;
+}
+.about-us p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto 30px;
+  color: #e0e0e0;
+}
+
+    
+
+    /* Information Cards */
+    .info-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.info-card {
+  background: linear-gradient(145deg, #1c3d4a, #1a313b);
+  padding: 25px;
+  border-radius: 15px;
+  width: 30%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(145deg, #227f95, #1c697b);
+}
+
+.info-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #00ffab;
+}
+
+.info-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d9d9d9;
+}
+
+/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  background: linear-gradient(90deg, #00d4ff, #007bff);
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.5);
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+.back-home:hover {
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  transform: scale(1.1);
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us p {
+    font-size: 1rem;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-card {
+    width: 100%;
+  }
+
+  .back-home {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Robotics Research Centre</h1>
+  </header>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>
+      Welcome to the Robotics Research Centre, where innovation meets technology. Our mission is to advance the field of robotics and develop state-of-the-art solutions that push the boundaries of artificial intelligence, automation, and machine learning. Our team consists of passionate engineers, researchers, and innovators who are committed to improving the future of robotics and creating systems that will transform industries globally.
+    </p>
+
+    <!-- Information Cards Section -->
+    <div class="info-cards">
+      <div class="info-card">
+        <h3>Collaboration</h3>
+        <p>We collaborate with leading universities, research institutions, and technology companies to drive robotics research forward and ensure real-world application of our work.</p>
+      </div>
+      <div class="info-card">
+        <h3>Impact</h3>
+        <p>Our work aims to revolutionize industries such as healthcare, manufacturing, and logistics, improving efficiency, safety, and productivity across the globe.</p>
+      </div>
+      <div class="info-card">
+        <h3>Innovation</h3>
+        <p>Our primary focus is on pioneering cutting-edge robotic solutions that integrate seamlessly with modern industries, offering smarter automation and AI capabilities.</p>
+      </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="main.html" class="back-home">Back to Home</a>
+  </section>
+
+</body>
+</html>
